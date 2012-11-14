@@ -28,6 +28,6 @@
   */
 
 
-  define(["excelConfig"], function (){
+  define(["ExcelConfig"], function (){
 
   });
