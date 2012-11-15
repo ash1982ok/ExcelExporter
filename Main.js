@@ -1,15 +1,7 @@
-(function () {
-	"use strict";
-	require.config({
-		paths: {
-			formatter:"OOXMLFormatter"
-		}
+require([
+	"OOXMLFormatter/Workbook"
+	],
+	function (Excel) {
+		"use strict";
+		console.log(Excel.render());
 	});
-
-	require([
-		"formatter/Workbook",
-		"formatter/Worksheet"],
-		function (Workbook, Worksheet) {
-			console.log("ExcelBody:" + Workbook.render());
-		});
-}());

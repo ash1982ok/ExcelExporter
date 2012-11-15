@@ -2,7 +2,7 @@
 *  This module represent the Excel WorkBook
 */
 
-define(["ExcelConfig", "Worksheet"],
+define(["OOXMLFormatter/ExcelConfig", "OOXMLFormatter/Worksheet"],
       function (ExcelConfig, Worksheet) {
 
     /* Header component for ExcelSheet   */
@@ -114,9 +114,9 @@ define(["ExcelConfig", "Worksheet"],
 
                 Footer: '</Workbook>',
 
-                render: function (Worksheet) {
-                    return this.Header + Worksheet.render() + this.Footer;
+                render: function () {
+                    return this.Header + Worksheet.Sheet.render() + this.Footer;
                 }
             };
-        return Workbook.render(Worksheet);
+        return Workbook;
     });
