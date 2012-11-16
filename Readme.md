@@ -5,5 +5,5 @@ Contributors are welcome :)
 
 A Big Thanks to :
 
-1) Downloadify Project \n
+1) Downloadify Project 
 2) Ext.ux.Exporter Project
