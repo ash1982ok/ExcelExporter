@@ -24,5 +24,5 @@ require([
 					transparent: true,
 					append: false
 				});
-		console.log(Excel.render());
+		//console.log(Excel.render());
 	});

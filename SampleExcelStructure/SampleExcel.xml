@@ -6,17 +6,9 @@
  xmlns:html="http://www.w3.org/TR/REC-html40"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xmlns:x2="http://schemas.microsoft.com/office/excel/2003/xml">
- <!-- This document properties can be extracted for ExcelConfig.js-->
  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
-  <Title>Test</Title>
-  <Subject>Test sub</Subject>
-  <Author>Ashok Kumar</Author>
-  <Manager>DD</Manager>
-  <Company>xyz</Company>
   <Version>10.2625</Version>
  </DocumentProperties>
-
- <!-- This OfficeDocumentSettings properties can be extracted for ExcelConfig.js-->
  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
   <Colors>
    <Color>
@@ -29,8 +21,6 @@
    </Color>
   </Colors>
  </OfficeDocumentSettings>
-
- <!-- This ExcelWorkbook properties can be extracted for ExcelConfig.js-->
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
   <WindowHeight>9000</WindowHeight>
   <WindowWidth>13860</WindowWidth>
@@ -39,8 +29,6 @@
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
-
- <!-- This Styles properties can be extracted for WorkbookStyle.js-->
  <Styles>
   <Style ss:ID="Default" ss:Name="Normal">
    <Alignment ss:Vertical="Bottom"/>
@@ -54,20 +42,25 @@
    <Font ss:FontName="Verdana"/>
   </Style>
  </Styles>
-
-<!-- Properties can be extracted for WorkSheet.js-->
  <Worksheet ss:Name="Ashok">
-  <Table ss:ExpandedColumnCount="256" ss:ExpandedRowCount="1" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="256" ss:ExpandedRowCount="3" x:FullColumns="1"
    x:FullRows="1" ss:StyleID="s21">
-   <Column ss:StyleID="s21" ss:Width="150" ss:Span="255"/>
+   <Column ss:Index="2" ss:StyleID="s21" ss:Width="150" ss:Span="254"/>
+   <Row ss:Index="2">
+    <Cell ss:Index="2"><Data ss:Type="String">Sample Text</Data></Cell>
+    <Cell><Data ss:Type="String">Sample Text 2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Sample Text</Data></Cell>
+    <Cell><Data ss:Type="String">Sample Text 2</Data></Cell>
+   </Row>
   </Table>
   <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
    <Selected/>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>13</ActiveRow>
-     <ActiveCol>3</ActiveCol>
+     <RangeSelection>C1</RangeSelection>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -75,6 +68,4 @@
   </WorksheetOptions>
   <x:WorksheetOptions/>
  </Worksheet>
-
-
 </Workbook>
