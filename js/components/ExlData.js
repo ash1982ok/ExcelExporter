@@ -14,7 +14,7 @@ define(
 					'">' +
 					dataConfig.data +
 					'</Data>';
-				console.log(tpl);
+				//console.log(tpl);
 				return tpl;
             }
         };

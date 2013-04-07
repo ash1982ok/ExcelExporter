@@ -14,7 +14,7 @@ define(['js/components/ExlCell'],
 			rowFooter = '</Row>';
         return {
 			render: function () {
-				console.log("Row:" + rowHeader + cell.render() + rowFooter);
+				//console.log("Row:" + rowHeader + cell.render() + rowFooter);
 				return rowHeader + cell.render() + rowFooter;
 			}
         };
