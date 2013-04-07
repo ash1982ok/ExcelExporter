@@ -1,5 +1,5 @@
 require([
-	"OOXMLFormatter/Workbook",
+	"js/Workbook",
 	"thirdparty/jquery-1.8.2.min.js",
 	"thirdparty/downloadify/js/swfobject.js",
 	"thirdparty/downloadify/js/downloadify.min.js"
